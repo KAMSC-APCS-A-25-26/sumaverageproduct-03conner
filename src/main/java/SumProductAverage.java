@@ -27,27 +27,29 @@ public class SumProductAverage {
 // PEOPLE I HELPED      :   Michael Xndzov
 // I RECEIVED HELP FROM :   Michael Xendzov
         // declares varables
-        double num1, num2, num3, num4, numruns;
+        double num1, num2, num3, numruns, sum, product, average;
         // prompt the uers for the number of runs
         Scanner scan = new Scanner(System.in);
         System.out.println("How many runs?");
         numruns = scan.nextDouble();
-        num2 = 0;
-        num3 = 1;
         for (int k = 0; k < numruns; k++) {
             System.out.println("Enter 1 number");
             num1 = scan.nextDouble();
-            num2 = num1 + num2;
-            num3 = num1 * num3;
+            System.out.println("Enter 1 number");
+            num2 = scan.nextDouble();
+            System.out.println("Enter 1 number");
+            num3 = scan.nextDouble();
+
+            sum = num1 + num2 + num3;
+            average = sum / 3;
+            product = num1 * num2 * num3;
+            // outputs the sum, product, and average
+            System.out.println("The sum is " + num2);
+            System.out.println("The product is " + product);
+            System.out.println("The average is " + average);
+
+
         }
-        num4 = num2 / numruns;
-        // outputs the sum, product, and average
-        System.out.println("The sum is " + num2);
-        System.out.println("The product is " + num3);
-        System.out.println("The average is " + num4);
-
-
     }
 }
-
 
