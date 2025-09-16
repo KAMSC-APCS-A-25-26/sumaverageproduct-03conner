@@ -44,7 +44,7 @@ public class SumProductAverage {
             average = sum / 3;
             product = num1 * num2 * num3;
             // outputs the sum, product, and average
-            System.out.println("The sum is " + num2);
+            System.out.println("The sum is " + sum);
             System.out.println("The product is " + product);
             System.out.println("The average is " + average);
 
