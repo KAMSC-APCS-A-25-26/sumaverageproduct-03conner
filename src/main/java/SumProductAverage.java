@@ -17,6 +17,39 @@ import java.util.Scanner;
 
 public class SumProductAverage {
     public static void main(String[] args) {
-        // TODO
+        // NAME                 :   Conner Chan
+// GROUP                :   APCSA
+// LAST MODIFIED        :   9/9/25
+// PROBLEM ID           :   2.21 - 2.22
+// PROBLEM DESCRIPTION  :   Have the user imput # numbers then output
+//                      :   the average, difference, and the sum
+// SOURCES USED         :   AP CS textbook
+// PEOPLE I HELPED      :   Michael Xndzov
+// I RECEIVED HELP FROM :   Michael Xendzov
+        // declares varables
+        double num1, num2, num3, numruns, sum, product, average;
+        // prompt the uers for the number of runs
+        Scanner scan = new Scanner(System.in);
+        System.out.println("How many runs?");
+        numruns = scan.nextDouble();
+        for (int k = 0; k < numruns; k++) {
+            System.out.println("Enter 1 number");
+            num1 = scan.nextDouble();
+            System.out.println("Enter 1 number");
+            num2 = scan.nextDouble();
+            System.out.println("Enter 1 number");
+            num3 = scan.nextDouble();
+
+            sum = num1 + num2 + num3;
+            average = sum / 3;
+            product = num1 * num2 * num3;
+            // outputs the sum, product, and average
+            System.out.println("The sum is " + sum);
+            System.out.println("The product is " + product);
+            System.out.println("The average is " + average);
+
+
+        }
     }
 }
+
